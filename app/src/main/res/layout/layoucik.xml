@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools" layout_width="wrap_content" layout_height="500dp"
+                                   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:id="@+id/cardv">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/linijka2">
+
+        <TextView
+                android:text="imie i nazwisko"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp" android:id="@+id/showname"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp" android:layout_marginStart="36dp" android:fontFamily="sans-serif-black"
+                android:textSize="24sp"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button"
+                app:layout_constraintBottom_toBottomOf="@+id/shownumber"
+                app:layout_constraintTop_toTopOf="@+id/showname"
+                app:layout_constraintVertical_bias="0.157" app:layout_constraintStart_toEndOf="@+id/showname"
+                android:layout_marginStart="96dp"/>
+        <TextView
+                android:text="numer telefonu"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" android:id="@+id/shownumber"
+                app:layout_constraintStart_toStartOf="@+id/showname"
+                app:layout_constraintTop_toBottomOf="@+id/showname" android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
